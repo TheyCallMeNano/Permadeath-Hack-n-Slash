@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 15,
+  "bbox_right": 63,
   "bbox_top": 0,
-  "bbox_bottom": 15,
+  "bbox_bottom": 63,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 16,
-  "height": 16,
+  "width": 64,
+  "height": 64,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"520f7127-d5be-443d-87a4-62b959b3824b","path":"sprites/sprCollisionMask/sprCollisionMask.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"520f7127-d5be-443d-87a4-62b959b3824b","path":"sprites/sprCollisionMask/sprCollisionMask.yy",},"LayerId":{"name":"86f68354-b61d-49dc-949e-10d4f4f01701","path":"sprites/sprCollisionMask/sprCollisionMask.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprCollisionMask","path":"sprites/sprCollisionMask/sprCollisionMask.yy",},"resourceVersion":"1.0","name":"520f7127-d5be-443d-87a4-62b959b3824b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2f9fa760-8d26-4581-b066-c04bc600985a","path":"sprites/sprWarp/sprWarp.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2f9fa760-8d26-4581-b066-c04bc600985a","path":"sprites/sprWarp/sprWarp.yy",},"LayerId":{"name":"a74d0806-83e8-4537-90d8-085065cde363","path":"sprites/sprWarp/sprWarp.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprWarp","path":"sprites/sprWarp/sprWarp.yy",},"resourceVersion":"1.0","name":"2f9fa760-8d26-4581-b066-c04bc600985a","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprCollisionMask","path":"sprites/sprCollisionMask/sprCollisionMask.yy",},
+    "spriteId": {"name":"sprWarp","path":"sprites/sprWarp/sprWarp.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"78b2cbf6-e5cb-486a-b0c6-485b528501a2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"520f7127-d5be-443d-87a4-62b959b3824b","path":"sprites/sprCollisionMask/sprCollisionMask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a90182a6-08b5-49dc-a84a-f2cb5075c1f6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2f9fa760-8d26-4581-b066-c04bc600985a","path":"sprites/sprWarp/sprWarp.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprCollisionMask","path":"sprites/sprCollisionMask/sprCollisionMask.yy",},
+    "parent": {"name":"sprWarp","path":"sprites/sprWarp/sprWarp.yy",},
     "resourceVersion": "1.3",
-    "name": "sprCollisionMask",
+    "name": "sprWarp",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"86f68354-b61d-49dc-949e-10d4f4f01701","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a74d0806-83e8-4537-90d8-085065cde363","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Dev Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sprCollisionMask",
+  "name": "sprWarp",
   "tags": [],
   "resourceType": "GMSprite",
 }
