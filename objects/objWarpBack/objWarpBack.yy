@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Vars & Dev Utils",
+    "path": "folders/Objects/Vars & Dev Utils.yy",
   },
   "resourceVersion": "1.0",
   "name": "objWarpBack",

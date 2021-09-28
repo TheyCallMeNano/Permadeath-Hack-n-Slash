@@ -1,9 +1,12 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sprCollisionMaskHalfX",
+    "path": "sprites/sprCollisionMaskHalfX/sprCollisionMaskHalfX.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": true,
+  "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
@@ -17,18 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Vars & Dev Utils",
-    "path": "folders/Objects/Vars & Dev Utils.yy",
+    "name": "Collision Objs",
+    "path": "folders/Objects/Vars & Dev Utils/Collision Objs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objCamera",
+  "name": "objCollisionHalfX",
   "tags": [],
   "resourceType": "GMObject",
 }

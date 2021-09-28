@@ -30,11 +30,41 @@ if (moveX == 0)
 //Horizontal Checks
 if(moveX != 0)
 {
-	if(place_meeting(x+moveX,y,objCollisonGeneric))
+	if(place_meeting(x+moveX,y,objCollisionGeneric))
 	{
 		repeat(abs(moveX))
 		{
-			if(!place_meeting(x+sign(moveX),y,objCollisonGeneric))
+			if(!place_meeting(x+sign(moveX),y,objCollisionGeneric))
+			{
+				x += sign(moveX);
+			}
+			else
+			{
+				break;
+			}
+		}
+		moveX = 0;
+	}
+	if(place_meeting(x+moveX,y,objCollisionHalfY))
+	{
+		repeat(abs(moveX))
+		{
+			if(!place_meeting(x+sign(moveX),y,objCollisionHalfY))
+			{
+				x += sign(moveX);
+			}
+			else
+			{
+				break;
+			}
+		}
+		moveX = 0;
+	}
+	if(place_meeting(x+moveX,y,objCollisionHalfX))
+	{
+		repeat(abs(moveX))
+		{
+			if(!place_meeting(x+sign(moveX),y,objCollisionHalfX))
 			{
 				x += sign(moveX);
 			}
@@ -50,11 +80,41 @@ if(moveX != 0)
 //Vertical Checks
 if(moveY != 0)
 {
-	if(place_meeting(x,y+moveY,objCollisonGeneric))
+	if(place_meeting(x,y+moveY,objCollisionGeneric))
 	{
 		repeat(abs(moveY))
 		{
-			if(!place_meeting(x,y+sign(moveY),objCollisonGeneric))
+			if(!place_meeting(x,y+sign(moveY),objCollisionGeneric))
+			{
+				y += sign(moveY);
+			}
+			else
+			{
+				break;
+			}
+		}
+		moveY = 0;
+	}
+	if(place_meeting(x,y+moveY,objCollisionHalfY))
+	{
+		repeat(abs(moveY))
+		{
+			if(!place_meeting(x,y+sign(moveY),objCollisionHalfY))
+			{
+				y += sign(moveY);
+			}
+			else
+			{
+				break;
+			}
+		}
+		moveY = 0;
+	}
+	if(place_meeting(x,y+moveY,objCollisionHalfX))
+	{
+		repeat(abs(moveY))
+		{
+			if(!place_meeting(x,y+sign(moveY),objCollisionHalfX))
 			{
 				y += sign(moveY);
 			}
@@ -71,3 +131,5 @@ if(moveY != 0)
 
 x += moveX;
 y += moveY;
+
+//Debug & Testing

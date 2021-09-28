@@ -1,16 +1,16 @@
 /// @description Camera Properties
 
-camera = camera_create();
+global.sequenceLayer = noone;
 
-var vm = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
-var pm = matrix_build_projection_ortho(640,480,1,10000);
-
-camera_set_view_mat(camera,vm);
-camera_set_proj_mat(camera,pm);
-
-view_camera[0] = camera;
+cam = view_camera[0];
 
 follow = objPlayer;
+viewWHalf = camera_get_view_width(cam) * 0.5;
+viewHHalf = camera_get_view_height(cam) * 0.5;
 
-xTo = x;
-yTo = y;
+xTo = xstart;
+yTo = ystart;
+
+shakeLength = 0;
+shakeMagnitude = 0;
+shakeRemain = 0;

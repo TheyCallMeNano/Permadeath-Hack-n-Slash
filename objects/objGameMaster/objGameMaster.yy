@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sprCollisionMask",
-    "path": "sprites/sprCollisionMask/sprCollisionMask.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -20,15 +17,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Vars & Dev Utils",
+    "path": "folders/Objects/Vars & Dev Utils.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objCollisonGeneric",
+  "name": "objGameMaster",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -6,7 +6,8 @@ function TransitionPlaceSequence(_type)
 {
 	if(layer_exists("Transition")) layer_destroy("Transition");
 	var _lay = layer_create(-9999,"Transition");
-	layer_sequence_create(_lay,0,0,_type);
+	layer_sequence_create(_lay,objCamera.x-320,objCamera.y-240,_type);
+	global.sequenceLayer = layer_sequence_create(_lay,camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]),_type);
 }
 
 function TransitionStart(_roomTarget, _typeOut, _typeIn)

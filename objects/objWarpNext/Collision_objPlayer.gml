@@ -1,5 +1,5 @@
 /// @description Room Transition & Teleporting
 
-var target = Hub;
+var target = DungeonEntry;
 
 TransitionStart(target,sqFadeout,sqFadein);
