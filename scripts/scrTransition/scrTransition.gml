@@ -15,6 +15,7 @@ function TransitionStart(_roomTarget, _typeOut, _typeIn)
 	if(!global.midTransition)
 	{
 		global.midTransition = true;
+		global.gamePaused = true;
 		global.roomTarget = _roomTarget;
 		TransitionPlaceSequence(_typeOut);
 		layer_set_target_room(_roomTarget);
@@ -33,5 +34,6 @@ function TransitionChangeRoom()
 function TransitionFinished()
 {
 	layer_sequence_destroy(self.elementID);
+	global.gamePaused = false;
 	global.midTransition = false;
 }

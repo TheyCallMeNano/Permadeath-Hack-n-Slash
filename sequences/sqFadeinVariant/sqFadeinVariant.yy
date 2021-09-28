@@ -62,7 +62,7 @@
     "path": "folders/Sequences.yy",
   },
   "resourceVersion": "1.3",
-  "name": "sqFadein",
+  "name": "sqFadeinVariant",
   "tags": [],
   "resourceType": "GMSequence",
 }

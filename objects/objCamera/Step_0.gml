@@ -22,6 +22,3 @@ y += random_range(-shakeRemain,shakeRemain);
 shakeRemain = max(0,shakeRemain-((1/shakeLength) * shakeMagnitude));
 
 camera_set_view_pos(cam,x-viewWHalf,y-viewHHalf);
-
-layer_sequence_x(global.sequenceLayer,x-viewWHalf);
-layer_sequence_y(global.sequenceLayer,y-viewHHalf);

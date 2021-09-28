@@ -2,4 +2,5 @@
 
 var target = DungeonEntry;
 
-TransitionStart(target,sqFadeout,sqFadein);
+TransitionStart(target,transitionTypeOut,transitionTypeIn);
+transitionDice = irandom_range(0,100);
