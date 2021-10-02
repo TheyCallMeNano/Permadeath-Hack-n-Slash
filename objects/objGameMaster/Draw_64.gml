@@ -1,7 +1,18 @@
 /// @description Display Player Stats & Enviroment Text
 
+draw_set_font(fGUI);
 //Player Essentials
-draw_text(400,200,"Stamina: " + string(global.plrStamina));
+if instance_exists(objPlayer)
+{
+	if !objPlayer.run || global.plrStamina > 0
+	{
+		scrOutlinedText(400,600,c_black,c_white,"Stamina: " + string(global.plrStamina));
+	}
+	else if objPlayer.run && global.plrStamina = 0
+	{
+		scrOutlinedText(400,600,c_black,c_red,"Stamina: " + string(global.plrStamina));
+	}
+}
 
 //Debug Text
 if keyboard_check(vk_f9)
