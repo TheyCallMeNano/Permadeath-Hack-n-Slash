@@ -1,5 +1,5 @@
 {
-  "option_operagx_version": "0.0.0.5",
+  "option_operagx_version": "0.0.0.7",
   "option_operagx_game_name": "Permadeath Hack n' Slash",
   "option_operagx_splash_screen": "${base_options_dir}/operagx/splash.png",
   "option_operagx_interpolate_pixels": true,

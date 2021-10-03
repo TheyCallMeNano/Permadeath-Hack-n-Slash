@@ -18,6 +18,10 @@ if instance_exists(objPlayer)
 if keyboard_check(vk_f9)
 {
 	draw_text(400,220,"Stamina Delay: " + string(global.plrStaminaRechargeDelay));
+	if instance_exists(objPlayer)
+	{
+		scrOutlinedText(400,240,c_black, c_white, "Run T/F: " + string(objPlayer.run))
+	}
 }
 else
 {
