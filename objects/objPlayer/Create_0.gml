@@ -1,5 +1,6 @@
 /// @description Movement and Gameplay Vars
 // Temporary placement, will move to a generic controller object later
+visible = false;
 
 spd = 2;
 baseSpd = 2;
