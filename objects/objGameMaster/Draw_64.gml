@@ -20,8 +20,10 @@ if keyboard_check(vk_f9)
 	draw_text(400,220,"Stamina Delay: " + string(global.plrStaminaRechargeDelay));
 	if instance_exists(objPlayer)
 	{
-		scrOutlinedText(400,240,c_black, c_white, "Run T/F: " + string(objPlayer.run))
+		scrOutlinedText(400,240,c_black, c_white, "Run T/F: " + string(objPlayer.run));
 	}
+	scrOutlinedText(400,260,c_black, c_white, "Mouse X: " + string(mouse_x));
+	scrOutlinedText(400,280,c_black, c_white, "Mouse Y: " + string(mouse_y));
 }
 else
 {

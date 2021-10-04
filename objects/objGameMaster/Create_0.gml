@@ -12,4 +12,4 @@ global.plrStaminaRecharge = 0.5;
 global.plrStaminaRechargeDelay = 0;
 
 //Misc
-global.iCamera = instance_create_layer(0,0,layer,objCamera);
+global.iCamera = instance_create_layer(800,352,layer,objCamera);

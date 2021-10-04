@@ -27,10 +27,9 @@ if global.gamePaused = false
 	{
 		spd = baseSpd;
 	}
-	global.plrStaminaRechargeDelay = 0;
 	
 	//Begin countdown to refil stamina
-	if global.plrStaminaRechargeDelay != 120 && global.plrStamina = 0 || global.plrStaminaRechargeDelay != 120 && global.plrStamina < global.plrMaxStamina
+	if global.plrStaminaRechargeDelay != 120 && run = 0 && global.plrStamina < global.plrMaxStamina
 	{
 		global.plrStaminaRechargeDelay += 1;
 	}
