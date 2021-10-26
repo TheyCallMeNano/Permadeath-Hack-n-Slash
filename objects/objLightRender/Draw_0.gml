@@ -21,7 +21,6 @@ with(objLightingPlr)
 	draw_sprite_ext(sprite_index, image_index, x, y, 2, 2, 0, c_white, 1);
 	gpu_set_blendmode(bm_normal);
 }
-
 with(objLightingMouse)
 {
 	gpu_set_blendmode(bm_subtract);

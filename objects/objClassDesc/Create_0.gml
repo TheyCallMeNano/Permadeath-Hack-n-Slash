@@ -6,4 +6,6 @@ doesn't get fatigued
 after running out 
 of stamina. Hitting 
 behind an enemy 
-always crits.";
+always crits. With
+an additional 50
+stamina.";

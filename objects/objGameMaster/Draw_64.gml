@@ -28,6 +28,11 @@ if global.midTransition = false
 		scrOutlinedText(0,60,c_black, c_white, "Mouse Y: " + string(mouse_y));
 		scrOutlinedText(0,80,c_black,c_white,"Class Int: " + string(global.class));
 		scrOutlinedText(0,100,c_black,c_white,"Class Name: " + string(global.className));
+		if instance_exists(objEnemySpawner)
+		{
+			scrOutlinedText(0,120,c_black,c_white,"Enemy Spawn Chance: " + string(objEnemySpawner.enemySpawn));
+			scrOutlinedText(0,140,c_black,c_white,"Enemy Amount: " + string(objEnemySpawner.enemyCurrent));
+		}
 	}
 	else
 	{

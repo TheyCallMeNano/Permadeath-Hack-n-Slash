@@ -23,4 +23,5 @@ if global.class = 1
 	global.plrStamina = 150;
 	global.plrStaminaRecharge = 0.75;
 	global.plrStaminaDelayTime = 100;
+	global.baseDMG = 15;
 }

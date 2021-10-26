@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "sprCollisionMaskHalfY",
-    "path": "sprites/sprCollisionMaskHalfY/sprCollisionMaskHalfY.yy",
+    "name": "sprNoSpawnZone",
+    "path": "sprites/sprNoSpawnZone/sprNoSpawnZone.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "objSolid",
-    "path": "objects/objSolid/objSolid.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -27,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Collision Objs",
-    "path": "folders/Objects/Vars & Dev Utils/Collision Objs.yy",
+    "name": "Vars & Dev Utils",
+    "path": "folders/Objects/Vars & Dev Utils.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objCollisionHalfY",
+  "name": "objNoSpawnZone",
   "tags": [],
   "resourceType": "GMObject",
 }

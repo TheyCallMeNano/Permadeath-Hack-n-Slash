@@ -3,7 +3,7 @@ function Log(msg)
 	var _message;
 	_message = argument0;
 
-	var _log_to_screen = false;
+	var _log_to_screen = true;
 
 	if ( _log_to_screen )
 	{
