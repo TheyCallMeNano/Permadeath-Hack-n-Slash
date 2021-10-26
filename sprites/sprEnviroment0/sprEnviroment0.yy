@@ -93,8 +93,8 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Dev Sprites",
+    "path": "folders/Sprites/Dev Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprEnviroment0",

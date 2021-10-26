@@ -5,6 +5,8 @@ randomize();
 global.gamePaused = false;
 
 //Player Vars
+global.class = 0;
+global.className = "";
 global.plrHP = 100;
 global.plrMaxStamina = 100;
 global.plrStamina = 100;

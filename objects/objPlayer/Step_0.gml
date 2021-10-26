@@ -15,15 +15,20 @@ if global.gamePaused = false
 	{
 		//Both the amount you regain and use in a frame must be consistent in order to avoid going negative
 		global.plrStamina -= global.plrStaminaRecharge;
+		global.plrStaminaRechargeDelay = 0;
 		spd = abs((run*sprinting));
 	}
 	// Check if we're out of stamina
 	else if global.plrStamina = 0 || run = 0
 	{
-		//Reset speed to walking, might replace with fatigued speed later
-		spd = baseSpd;
+		//Reset speed to fatigued
+		spd = fatiguedSpd;
 	}
 	else
+	{
+		spd = baseSpd;
+	}
+	if global.plrStamina > global.plrMaxStamina*0.25 - 1 && run = 0
 	{
 		spd = baseSpd;
 	}
@@ -47,6 +52,7 @@ if global.gamePaused = false
 	if global.plrStamina > global.plrMaxStamina
 	{
 		global.plrStamina = global.plrMaxStamina;
+		Log("Stamina Overflow!");
 	}
 	#endregion SPRINTING
 	

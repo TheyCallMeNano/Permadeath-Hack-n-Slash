@@ -4,6 +4,7 @@ visible = false;
 
 spd = 2;
 baseSpd = 2;
+fatiguedSpd = 1.5;
 sprinting = 4;
 
 left = keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A"));

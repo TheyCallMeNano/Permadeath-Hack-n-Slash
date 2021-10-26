@@ -1,6 +1,7 @@
-function Log(_message)
+function Log(msg)
 {
-	var _message = argument0;
+	var _message;
+	_message = argument0;
 
 	var _log_to_screen = false;
 

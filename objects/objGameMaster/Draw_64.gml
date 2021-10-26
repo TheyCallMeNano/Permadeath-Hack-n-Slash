@@ -17,13 +17,15 @@ if instance_exists(objPlayer)
 //Debug Text
 if keyboard_check(vk_f9)
 {
-	draw_text(400,220,"Stamina Delay: " + string(global.plrStaminaRechargeDelay));
+	scrOutlinedText(0,0,c_black,c_white,"Stamina Delay: " + string(global.plrStaminaRechargeDelay));
 	if instance_exists(objPlayer)
 	{
-		scrOutlinedText(400,240,c_black, c_white, "Run T/F: " + string(objPlayer.run));
+		scrOutlinedText(0,20,c_black, c_white, "Run T/F: " + string(objPlayer.run));
 	}
-	scrOutlinedText(400,260,c_black, c_white, "Mouse X: " + string(mouse_x));
-	scrOutlinedText(400,280,c_black, c_white, "Mouse Y: " + string(mouse_y));
+	scrOutlinedText(0,40,c_black, c_white, "Mouse X: " + string(mouse_x));
+	scrOutlinedText(0,60,c_black, c_white, "Mouse Y: " + string(mouse_y));
+	scrOutlinedText(0,80,c_black,c_white,"Class Int: " + string(global.class));
+	scrOutlinedText(0,100,c_black,c_white,"Class Name: " + string(global.className));
 }
 else
 {
