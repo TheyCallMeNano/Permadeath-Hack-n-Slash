@@ -11,7 +11,7 @@ if global.gamePaused = false
 	
 	#region SPRINTING
 	//Running and consuming Stamina
-	if global.plrStamina != 0 && run = 1
+	if global.plrStamina != 0 && run = 1 && left = 1 || global.plrStamina != 0 && run = 1 && right = 1 || global.plrStamina != 0 && run = 1 && up = 1 || global.plrStamina != 0 && run = 1 && down = 1
 	{
 		//Both the amount you regain and use in a frame must be consistent in order to avoid going negative
 		global.plrStamina -= global.plrStaminaRecharge;
@@ -19,12 +19,12 @@ if global.gamePaused = false
 		spd = abs((run*sprinting));
 	}
 	// Check if we're out of stamina
-	else if global.plrStamina = 0 || run = 0
+	else if global.plrStamina = 0 || run = 0 && global.class != 1
 	{
 		//Reset speed to fatigued
 		spd = fatiguedSpd;
 	}
-	else
+	else if global.plrStamina = 0 || run = 0
 	{
 		spd = baseSpd;
 	}
@@ -34,13 +34,12 @@ if global.gamePaused = false
 	}
 	
 	//Begin countdown to refil stamina
-	if global.plrStaminaRechargeDelay != 120 && run = 0 && global.plrStamina < global.plrMaxStamina
+	if global.plrStaminaRechargeDelay != global.plrStaminaDelayTime && run = 0 && global.plrStamina < global.plrMaxStamina
 	{
 		global.plrStaminaRechargeDelay += 1;
 	}
-	
 	//Refilling Stamina
-	if global.plrStaminaRechargeDelay = 120
+	if global.plrStaminaRechargeDelay = global.plrStaminaDelayTime
 	{
 		global.plrStamina += global.plrStaminaRecharge;
 		if global.plrStamina = global.plrMaxStamina || global.plrStamina > global.plrMaxStamina

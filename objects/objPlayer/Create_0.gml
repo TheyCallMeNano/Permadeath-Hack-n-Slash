@@ -15,3 +15,12 @@ run = keyboard_check(vk_shift);
 
 moveX = 0;
 moveY = 0;
+
+if global.class = 1
+{
+	global.plrHP = 95;
+	global.plrMaxStamina = 150;
+	global.plrStamina = 150;
+	global.plrStaminaRecharge = 0.75;
+	global.plrStaminaDelayTime = 100;
+}
