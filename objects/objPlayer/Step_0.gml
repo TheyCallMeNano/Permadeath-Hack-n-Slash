@@ -171,4 +171,5 @@ if global.gamePaused = false
 
 	x += moveX;
 	y += moveY;
+	
 }

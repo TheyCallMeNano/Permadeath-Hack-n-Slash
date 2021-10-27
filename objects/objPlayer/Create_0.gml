@@ -1,5 +1,4 @@
 /// @description Movement and Gameplay Vars
-// Temporary placement, will move to a generic controller object later
 visible = false;
 
 spd = 2;
@@ -24,4 +23,13 @@ if global.class = 1
 	global.plrStaminaRecharge = 0.75;
 	global.plrStaminaDelayTime = 100;
 	global.baseDMG = 15;
+}
+if global.class = 2
+{
+	global.plrHP = 125;
+	global.plrMaxStamina = 95;
+	global.plrStamina = 95;
+	global.plrStaminaRecharge = 0.5;
+	global.plrStaminaDelayTime = 120;
+	global.baseDMG = 30;
 }

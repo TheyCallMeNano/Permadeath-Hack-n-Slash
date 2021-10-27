@@ -14,3 +14,12 @@ if enemySpawn > 75 && maxEnemies != enemyCurrent && !place_meeting(x,y,objNoSpaw
 }
 
 enemySpawn = irandom_range(enemySpawnChanceMin,enemySpawnChanceMax);
+
+if keyboard_check(vk_f9)
+{
+	visible = true;
+}
+else
+{
+	visible = false;
+}

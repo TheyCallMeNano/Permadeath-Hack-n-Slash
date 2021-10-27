@@ -18,7 +18,7 @@ if stuckCheck = 240
 			objEnemySpawner.enemyCurrent -= 1;
 		}
 	}
-	stuckCheck = 0
+	stuckCheck = 0;
 }
 
 if stateWaitTime = 120

@@ -1,7 +1,7 @@
 {
   "option_windows_display_name": "Permadeath Hack n' Slash",
   "option_windows_executable_name": "${project_name}.exe",
-  "option_windows_version": "0.0.0.7",
+  "option_windows_version": "0.0.1.1",
   "option_windows_company_info": "Powerhouse Studios",
   "option_windows_product_info": "Permadeath Hack n' Slash",
   "option_windows_copyright_info": "@ Powerhouse Studios 2021",

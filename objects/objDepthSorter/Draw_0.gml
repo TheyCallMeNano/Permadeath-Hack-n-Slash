@@ -11,7 +11,7 @@ var yy = 0;
 with(objParentDepth)
 {
 	dGrid[# 0,yy] = id;
-	dGrid[# 1,yy] = y;
+	dGrid[# 1,yy]= bbox_bottom;
 	yy ++;
 }
 
