@@ -7,7 +7,7 @@ if (surface_exists(lightingSurface) == false)
 
 surface_set_target(lightingSurface);
 
-draw_clear_alpha(c_black,0.6);
+draw_clear_alpha(c_black,0.85);
 
 with(objLightingCutout)
 {
