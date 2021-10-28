@@ -2,8 +2,8 @@
 
 #region ANIMATION STATE
 
-if global.gamePaused = false
-{
+//if global.gamePaused = false
+//{
 	//Class Rouge
 	if left && global.class = 1
 	{
@@ -51,7 +51,7 @@ if global.gamePaused = false
 	{
 		sprite_index = sprTitan;
 	}
-}
+//}
 
 #endregion ANIMATION STATE
 	

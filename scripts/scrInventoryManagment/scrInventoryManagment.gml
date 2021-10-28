@@ -31,3 +31,10 @@ function InventoryAdd(rootObj,itemType)
 	}
 	else return false;
 }
+
+function InventorySwap(objFrom,slotFrom,objTo,slotTo)
+{
+	var itemFrom = objFrom.inventory[slotFrom];
+	objFrom.inventory[slotFrom] = objTo.inventory[slotTo];
+	objTo.inventory[slotTo] = itemFrom;
+}

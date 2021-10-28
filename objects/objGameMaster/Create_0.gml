@@ -3,6 +3,7 @@ randomize();
 
 //Controllers
 global.gamePaused = false;
+global.gameSaveSlot = 0;
 
 //Player Vars
 global.class = 0;
