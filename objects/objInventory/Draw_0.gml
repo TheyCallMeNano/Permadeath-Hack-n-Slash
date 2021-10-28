@@ -17,5 +17,6 @@ for(var i = 0; i < INVENTORY_SLOTS; i += 1)
 		draw_set_alpha(alpha);
 		draw_sprite(sprItems,inventory[i],xx,yy);
 		draw_set_alpha(1.0);
+		SaveInventory();
 	}
 }

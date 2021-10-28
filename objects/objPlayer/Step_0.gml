@@ -1,4 +1,4 @@
-/// @description Create movement
+/// @description Calculate Movement and Collisions
 
 left = keyboard_check(vk_left) || keyboard_check(ord("A"));
 right = keyboard_check(vk_right) || keyboard_check(ord("D"));
@@ -28,8 +28,10 @@ if global.gamePaused = false
 	{
 		spd = baseSpd;
 	}
+	//Check if stamina has filled by 1/4th
 	if global.plrStamina > global.plrMaxStamina*0.25 - 1 && run = 0
 	{
+		//Reset speed to base
 		spd = baseSpd;
 	}
 	

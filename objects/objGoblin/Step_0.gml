@@ -1,6 +1,7 @@
-/// @description 
+/// @description States & Health
 if global.gamePaused = false
 {
+	//Movement Application
 	stateWaitTime += 1;
 	stuckCheck += 1;
 
@@ -9,7 +10,8 @@ if global.gamePaused = false
 
 	moveX = (horizontal1 - horizontal2) * spd;
 	moveY = (vertical1 - vertical2) * spd;
-
+	
+	//Detect if the enemy is stuck in a collision
 	if stuckCheck = 240
 	{
 		if x = xPrev && y = yPrev
@@ -22,7 +24,8 @@ if global.gamePaused = false
 		}
 		stuckCheck = 0;
 	}
-
+	
+	//Pick a new random direction
 	if stateWaitTime = 120
 	{
 		horizontal1 = irandom_range(0,1);
@@ -134,11 +137,11 @@ if global.gamePaused = false
 	}
 	#endregion COLLISIONS
 
-
+	//Apply Movement
 	x += moveX;
 	y += moveY;
 
-
+	//Check if the enemy is dead
 	if hp = 0 || hp < 0
 	{
 		if instance_exists(objEnemySpawner)

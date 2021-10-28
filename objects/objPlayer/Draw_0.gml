@@ -1,9 +1,7 @@
-/// @description 
+/// @description Assign the movement animations and check class
 
 #region ANIMATION STATE
 
-//if global.gamePaused = false
-//{
 	//Class Rouge
 	if left && global.class = 1
 	{
@@ -51,7 +49,6 @@
 	{
 		sprite_index = sprTitan;
 	}
-//}
 
 #endregion ANIMATION STATE
 	

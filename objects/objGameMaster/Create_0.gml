@@ -1,4 +1,4 @@
-///@desc Vars & Config
+///@desc Global Vars & Config
 randomize();
 
 //Controllers

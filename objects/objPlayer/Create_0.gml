@@ -1,6 +1,7 @@
 /// @description Movement and Gameplay Vars
 visible = false;
 
+//Speed Vars
 spd = 2;
 baseSpd = 2;
 fatiguedSpd = 1.5;
@@ -15,6 +16,8 @@ run = keyboard_check(vk_shift);
 moveX = 0;
 moveY = 0;
 
+///Temp Class Check
+//Rouge
 if global.class = 1
 {
 	global.plrHP = 95;
@@ -24,6 +27,7 @@ if global.class = 1
 	global.plrStaminaDelayTime = 100;
 	global.baseDMG = 15;
 }
+//Titan
 if global.class = 2
 {
 	global.plrHP = 125;

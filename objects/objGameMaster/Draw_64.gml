@@ -19,17 +19,25 @@ if global.midTransition = false
 	//Debug Text
 	if keyboard_check(vk_f9)
 	{
+		//Time until stamina recharges
 		scrOutlinedText(0,0,c_black,c_white,"Stamina Delay: " + string(global.plrStaminaRechargeDelay));
+		
 		if instance_exists(objPlayer)
 		{
+			//Check if running
 			scrOutlinedText(0,20,c_black, c_white, "Run T/F: " + string(objPlayer.run));
 		}
+		//Mouse X & Y
 		scrOutlinedText(0,40,c_black, c_white, "Mouse X: " + string(mouse_x));
 		scrOutlinedText(0,60,c_black, c_white, "Mouse Y: " + string(mouse_y));
+		
+		//Class Int & Name
 		scrOutlinedText(0,80,c_black,c_white,"Class Int: " + string(global.class));
 		scrOutlinedText(0,100,c_black,c_white,"Class Name: " + string(global.className));
+		
 		if instance_exists(objEnemySpawner)
 		{
+			//Chance to spawn enemy and current enemy count
 			scrOutlinedText(0,120,c_black,c_white,"Enemy Spawn Chance: " + string(objEnemySpawner.enemySpawn));
 			scrOutlinedText(0,140,c_black,c_white,"Enemy Amount: " + string(objEnemySpawner.enemyCurrent));
 		}

@@ -1,13 +1,13 @@
-/// @description 
+/// @description Define Conditions
 visible = false;
 
 stateWaitTime = 0;
 state = 0;
 
+//Temp Enemy Health
 hp = 75;
 
-sightRangeX = 64
-pointX = 0;
+//Movement Vars
 moveX = 0;
 moveY = 0;
 spd = 0.8;
