@@ -84,6 +84,36 @@ if global.gamePaused = false
 			}
 			moveX = 0;
 		}
+		if(place_meeting(x+moveX,y,objWarpBack))
+		{
+			repeat(abs(moveX))
+			{
+				if(!place_meeting(x+sign(moveX),y,objWarpBack))
+				{
+					x += sign(moveX);
+				}
+				else
+				{
+					break;
+				}
+			}
+			moveX = 0;
+		}
+		if(place_meeting(x+moveX,y,objWarpNext))
+		{
+			repeat(abs(moveX))
+			{
+				if(!place_meeting(x+sign(moveX),y,objWarpNext))
+				{
+					x += sign(moveX);
+				}
+				else
+				{
+					break;
+				}
+			}
+			moveX = 0;
+		}
 	}
 
 		//Vertical Checks
@@ -124,6 +154,36 @@ if global.gamePaused = false
 			repeat(abs(moveY))
 			{
 				if(!place_meeting(x,y+sign(moveY),objCollisionHalfX))
+				{
+					y += sign(moveY);
+				}
+				else
+				{
+					break;
+				}
+			}
+			moveY = 0;
+		}
+		if(place_meeting(x,y+moveY,objWarpNext))
+		{
+			repeat(abs(moveY))
+			{
+				if(!place_meeting(x,y+sign(moveY),objWarpNext))
+				{
+					y += sign(moveY);
+				}
+				else
+				{
+					break;
+				}
+			}
+			moveY = 0;
+		}
+		if(place_meeting(x,y+moveY,objWarpBack))
+		{
+			repeat(abs(moveY))
+			{
+				if(!place_meeting(x,y+sign(moveY),objWarpBack))
 				{
 					y += sign(moveY);
 				}
